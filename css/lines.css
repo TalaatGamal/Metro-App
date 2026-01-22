@@ -17,6 +17,7 @@
     justify-content: start;
     flex-direction: column;
     gap: 20px;
+    overflow-x: hidden;
 }
 .lines-page{
     
@@ -38,7 +39,7 @@
     transform: rotate(90deg);
     background-color: #ffffff;
     border-radius: 7px;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 .lsp .ti-2{
     transform: rotate(0deg);
@@ -46,6 +47,48 @@
 .lsp .ti-3{
     transform: rotate(0deg);
 }
+.lsp .back{
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    /* transform: rotate(-90deg); */
+    background-color: #ffffff;
+    box-shadow: #00000084 0px 0px 10px 0px;
+    width: 100vw;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 33px;
+    gap: 10px;
+    font-size: 20px;
+    color: #ff0000;
+    opacity: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

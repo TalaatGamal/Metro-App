@@ -55,12 +55,14 @@ subscribe_i.addEventListener("click", function () {
         // subscribe_p.style.height="100vh"
     }, 10);
 })
-
-
-
-
-
-
+//*******************************************************************
+document.querySelectorAll(".back").forEach(function (back) {
+    back.addEventListener("click", function () {
+        document.querySelectorAll(".lsp").forEach(function (el) {
+            el.style.width="0vw"
+        })
+    })
+})
 
 
 
