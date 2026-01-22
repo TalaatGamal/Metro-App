@@ -52,7 +52,6 @@
     box-shadow: #00655ee2 0px 0px 10px 0px;
     width: 100vw;
     height: 40px;
-    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: right;
@@ -61,9 +60,6 @@
     font-size: 19px;
     color: #ff0000;
     opacity: 70%;
-}
-.lsp i{
-    margin-top: 3px;
 }
 .lsp .back h2{
     font-size: 23px;
