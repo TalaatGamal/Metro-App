@@ -28,6 +28,9 @@ let subscribe_i = document.getElementById("subscribe-icon")
 
 
 
+
+
+
 // *****************************************************************
 lines_i.addEventListener("click", function () {
     lines_p.style.display="flex"

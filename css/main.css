@@ -340,6 +340,7 @@ body{
         gap: 10px;
         padding: 8px;
         padding-right: 16px;
+        cursor: pointer;
     }
     .btn h2{
         font-size: 25px;

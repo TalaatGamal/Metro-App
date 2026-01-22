@@ -6,6 +6,7 @@
     <title>Cairo-Metro</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/lines.css">
+    <link rel="stylesheet" href="station.css">
     <link rel="icon" href="images/cairo-metro-high-resolution-logo-2.png">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -82,11 +83,17 @@
                             <div class="form">
                                 <label for="from"> <h2>محطة البدايه</h2> 
                                     <div class="animated-line"><div class="all"><i class="fa-solid fa-location-arrow"></i><div class="al"></div></div></div></label>
-                                <input type="text" id="from" placeholder="- - - -" autofocus>
+                                <input type="text" id="startStation" placeholder="- - - -" autofocus autocomplete="off">
+                                <div id="results" class="results">
+                                    <div class="type">
+                                        <div class="num" id="num">2</div>
+                                        <h2>الخط الثاني <span>شبرا الخيمه <span><i class="fa-solid fa-arrow-left-long arrow"></i></span> المنيب</span></h2>
+                                    </div>
+                                </div>
                                 <label for="to"> 
                                     <h2>محطة <i class="fa-solid fa-location-dot ar"></i> الوصول</h2>
                                 </label>
-                                <input type="text" id="to" placeholder="- - - -">
+                                <input type="text" id="endStation" placeholder="- - - -" autocomplete="off">
                                 <div class="btn"> <h2>ذهاب</h2><img src="https://cdn-icons-gif.flaticon.com/8718/8718007.gif" alt=""></div>
                             </div>
                             
@@ -95,7 +102,7 @@
                             
                             <div class="ads">
                             <h2>اعلانات</h2>
-                                <div style="text-align:center;">
+                                <!-- <div style="text-align:center;">
                                 <iframe
                                     src="https://www.effectivegatecpm.com/bjjpcpvbv?key=e824ae2be558585612b1694dce15a6cc"
                                     style="border: none; width: 100%; max-width: 728px;"
@@ -125,7 +132,7 @@
                                     style="border: none; width: 100%; max-width: 728px;"
                                     scrolling="no"
                                 ></iframe>
-                                </div>
+                                </div> -->
                             
                             </div>
                             
@@ -211,5 +218,6 @@
         <!-- space -->
     </div>
     <script src="main.js"></script>
+    <script src="station.js"></script>
 </body>
 </html>
