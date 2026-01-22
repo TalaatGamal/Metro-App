@@ -10,7 +10,7 @@
     z-index: 9;
     top: 70px;
     left: 0px;
-    transition: 0.5s;
+    transition: 0.3s;
     opacity: 0;
     display: none; /***************************/
     align-items: center;

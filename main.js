@@ -35,7 +35,7 @@ lines_i.addEventListener("click", function () {
         lines_p.style.opacity="1"
         lines_p.style.width="100vw"
         // lines_p.style.height="100vh"
-    }, 10);
+    }, 1);
 })
 // *****************************************************************
 tickets_i.addEventListener("click", function () {
@@ -44,7 +44,7 @@ tickets_i.addEventListener("click", function () {
         tickets_p.style.opacity="1"
         tickets_p.style.width="100vw"
         // tickets_p.style.height="100vh"
-    }, 10);
+    }, 1);
 })
 // *****************************************************************
 subscribe_i.addEventListener("click", function () {
@@ -53,7 +53,7 @@ subscribe_i.addEventListener("click", function () {
         subscribe_p.style.opacity="1"
         subscribe_p.style.width="100vw"
         // subscribe_p.style.height="100vh"
-    }, 10);
+    }, 1);
 })
 //*******************************************************************
 document.querySelectorAll(".back").forEach(function (back) {
