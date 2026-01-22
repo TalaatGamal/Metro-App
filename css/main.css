@@ -355,7 +355,7 @@ body{
         /* background-color: #afd7da; */
         /* box-shadow: #00000061 10px 10px 10px 0px; */
         width: 90vw;
-        min-height: max-content;
+        min-height: 400px;
         padding: 15px;
         padding-top: 10px;
         padding-bottom: 10px;

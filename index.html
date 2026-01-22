@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cairo-Metro</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/lines.css">
     <link rel="icon" href="images/cairo-metro-high-resolution-logo-2.png">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +23,7 @@
 
 
 
-    <!-- for moble app tool -->
+    <!-- for mobile app tool -->
     <link rel="manifest" href="./manifest.json">
     <meta name="theme-color" content="#0f766e">
 
@@ -72,9 +73,9 @@
                         <h1> جاهز تعرف كل المعلومات <br> عن رحلتك !! 😍✨ </h1>
                         <hr>
                         <div class="icons">
-                            <div class="icon"><img src="https://cdn-icons-png.freepik.com/512/16384/16384935.png" alt=""><h2>الخطوط</h2></div>
-                            <div class="icon"><img class="i-2" src="https://cdn-icons-png.freepik.com/512/6546/6546875.png" alt=""><h2>التذاكر</h2></div>
-                            <div class="icon"><img class="i-3" src="https://cdn-icons-png.freepik.com/512/12555/12555344.png?ga=GA1.1.1214273586.1750358942" alt=""><h2>الاشتراكات</h2></div>
+                            <div class="icon" id="lines-icon"><img src="https://cdn-icons-png.freepik.com/512/16384/16384935.png" alt=""><h2>الخطوط</h2></div>
+                            <div class="icon" id="tickets-icon"><img class="i-2" src="https://cdn-icons-png.freepik.com/512/6546/6546875.png" alt=""><h2>التذاكر</h2></div>
+                            <div class="icon" id="subscribe-icon"><img class="i-3" src="https://cdn-icons-png.freepik.com/512/12555/12555344.png?ga=GA1.1.1214273586.1750358942" alt=""><h2>الاشتراكات</h2></div>
                         </div>
                         <div class="form">
                             <label for="from"> <h2>محطة البدايه</h2> 
@@ -86,73 +87,64 @@
                             <input type="text" id="to" placeholder="- - - -">
                             <div class="btn"> <h2>تحقق</h2><img src="https://cdn-icons-gif.flaticon.com/8718/8718007.gif" alt=""></div>
                         </div>
-                        <!-- <div class="air">
-                            <div class="air-icon"></div>
-                        </div> -->
-                    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                        <div class="lines-page lsp" id="lines-page">
+                            <img src="https://cdn-icons-png.freepik.com/512/16384/16384935.png" alt="" class="title-img">
+                            <h2 class="title">الخطوط <span>|</span> Lines</h2>
+                        </div>
+                        <div class="tickets-page lsp" id="tickets-page">
+                            <img src="https://cdn-icons-png.freepik.com/512/6546/6546875.png" alt="" class="title-img ti-2">
+                            <h2 class="title">التذاكر <span>|</span> Tickets</h2>
+                        </div>
+                        <div class="subscribe-page lsp" id="subscribe-page">
+                            <img src="https://cdn-icons-png.freepik.com/512/12555/12555344.png?ga=GA1.1.1214273586.1750358942" alt="" class="title-img ti-3">
+                            <h2 class="title">الاشتراكات <span>|</span> Subscriptions</h2>
+                        </div>
+                        
                         <!-- إعلان Banner من EffectiveGateCPM -->
-    <div class="ads">
-    <h2>اعلانات</h2>
-        <div style="text-align:center;">
-        <iframe
-            src="https://www.effectivegatecpm.com/bjjpcpvbv?key=e824ae2be558585612b1694dce15a6cc"
-            style="border: none; width: 100%; max-width: 728px;"
-            scrolling="no"
-        ></iframe>
-        </div>
-        
-        <div style="text-align:center;">
-        <iframe
-            src="https://www.effectivegatecpm.com/bjjpcpvbv?key=e824ae2be558585612b1694dce15a6cc"
-            style="border: none; width: 100%; max-width: 728px;"
-            scrolling="no"
-        ></iframe>
-        </div>
-        
-        <div style="text-align:center;">
-        <iframe
-            src="https://www.effectivegatecpm.com/bjjpcpvbv?key=e824ae2be558585612b1694dce15a6cc"
-            style="border: none; width: 100%; max-width: 728px;"
-            scrolling="no"
-        ></iframe>
-        </div>
-        <div style="text-align:center;">
-        <iframe
-            src="https://www.effectivegatecpm.com/bjjpcpvbv?key=e824ae2be558585612b1694dce15a6cc"
-            style="border: none; width: 100%; max-width: 728px;"
-            scrolling="no"
-        ></iframe>
-        </div>
-    </div>
-    <div class="g-cover">
-        <div class="gallery">
-            <div class="img i-1"></div>
-            <div class="img i-2"></div>
-            <div class="img i-3"></div>
-            <div class="img i-4"></div>
-        </div>
-    </div>
-
-
-
-
-
-
-
+                        
+                        <div class="ads">
+                        <h2>اعلانات</h2>
+                            <!-- <div style="text-align:center;">
+                            <iframe
+                                src="https://www.effectivegatecpm.com/bjjpcpvbv?key=e824ae2be558585612b1694dce15a6cc"
+                                style="border: none; width: 100%; max-width: 728px;"
+                                scrolling="no"
+                            ></iframe>
+                            </div>
+                            
+                            <div style="text-align:center;">
+                            <iframe
+                                src="https://www.effectivegatecpm.com/bjjpcpvbv?key=e824ae2be558585612b1694dce15a6cc"
+                                style="border: none; width: 100%; max-width: 728px;"
+                                scrolling="no"
+                            ></iframe>
+                            </div>
+                            
+                            <div style="text-align:center;">
+                            <iframe
+                                src="https://www.effectivegatecpm.com/bjjpcpvbv?key=e824ae2be558585612b1694dce15a6cc"
+                                style="border: none; width: 100%; max-width: 728px;"
+                                scrolling="no"
+                            ></iframe>
+                            </div>
+                            <div style="text-align:center;">
+                            <iframe
+                                src="https://www.effectivegatecpm.com/bjjpcpvbv?key=e824ae2be558585612b1694dce15a6cc"
+                                style="border: none; width: 100%; max-width: 728px;"
+                                scrolling="no"
+                            ></iframe>
+                            </div> -->
+                        
+                        </div>
+                        
+                        <div class="g-cover">
+                            <div class="gallery">
+                                <div class="img i-1"></div>
+                                <div class="img i-2"></div>
+                                <div class="img i-3"></div>
+                                <div class="img i-4"></div>
+                            </div>
+                        </div>
 
                     </div>
                     <div class="animation">
@@ -186,21 +178,5 @@
         <!-- space -->
     </div>
     <script src="main.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>
