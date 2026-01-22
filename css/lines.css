@@ -1,9 +1,6 @@
 
 .lsp{
-    background-color: rgba(255, 255, 255, 0.848);
-    /* backdrop-filter: blur(5px); */
-    /* width: 100vw;
-    height: 100vh; */
+    background-color: rgb(255, 255, 255);
     width: 0vw;
     height: 100vh;
     position: fixed;
@@ -18,28 +15,33 @@
     flex-direction: column;
     gap: 20px;
     overflow-x: hidden;
+    overflow-y: auto;
 }
-.lines-page{
+/* .lines-page{
     
-}
+} */
 .lsp .title{
-    width: 100%;
+    width: 90%;
+    /* background-color: #00586581; */
+    border: #00586581 solid 3px;
+    padding: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row-reverse;
     gap: 20px;
-    font-size: 25px;
+    border-radius: 12px;
 }
-.lsp .title span{
-    display: flex;
-    font-weight: 900;
+.lsp .title h2{
+    font-size: 25px;
+    /* color: #ffffff; */
 }
 .lsp .title-img{
     width: 40px;
     transform: rotate(90deg);
-    background-color: #ffffff;
-    border-radius: 7px;
-    margin-top: 20px;
+    /* background-color: #ffffff; */
+    /* border-radius: 7px; */
+    border: rgb(255, 255, 255) solid 5px;
 }
 .lsp .ti-2{
     transform: rotate(0deg);
@@ -64,7 +66,100 @@
 .lsp .back h2{
     font-size: 23px;
 }
-
+.lsp .text{
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.lsp .t-2{
+    /* text-align: center; */
+    font-size: 26px;
+    width: 95%;
+    color: #000000d0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 15px;
+}
+.lsp .map-img{
+    width: 95%;
+    margin-bottom: 20vh;
+    border-radius: 25px;
+    box-shadow: #00000086 0px 0px 10px 0px;
+    border: #007e92 solid 3px;
+}
+.lsp .ty{
+    width: 90vw;
+    height: 49px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-direction: row-reverse;
+    gap: 20px;
+    padding-right: 30px;
+    border-radius: 10px;
+}
+.lsp .ty h2{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1px;
+    font-size: 22px;
+}
+.lsp .ty h2 span{
+    font-size: 16px;
+    background-color: #0000004b;
+    padding: 1px 15px 1px 0px;
+    width: 235px;
+    border-radius: 5px;
+    line-height: 16px;
+}
+.lsp .ty h2 .dash{
+    width: max-content;
+    border-radius: 0px;
+    padding: 0px;
+    background-color: #00000000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px 0px 10px;
+    font-size: 13px;
+}
+.lsp .num{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 35px;
+    /* background-color: #000000b0; */
+    border: #ffffff solid 2px;
+    color: #ffffffcb;
+    font-weight: 500;
+    border-radius: 7px;
+    font-size: 22px;
+}
+.lsp .ty .sub{
+    font-size: 20px;
+    background-color: #00000000;
+    display: block;
+}
+.lsp .t-red{
+    background-color: #fa1010d6;
+}
+.lsp .t-blue{
+    background-color: #00707bda;
+}
+.lsp .t-green{
+    background-color: #007c34db;
+}
 
 
 

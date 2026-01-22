@@ -1,16 +1,14 @@
-let welcome = document.getElementById("welcome")
+// let welcome = document.getElementById("welcome")
 
-document.addEventListener("DOMContentLoaded", function () {
-    setTimeout(() => {
-        welcome.style.marginLeft="100vw"
-    }, 1000);
-    setTimeout(() => {
-        welcome.style.display="none"
-        console.log("welcome page display is ( none )")
-    }, 2000);
-})
-
-
+// document.addEventListener("DOMContentLoaded", function () {
+//     setTimeout(() => {
+//         welcome.style.marginLeft="100vw"
+//     }, 1000);
+//     setTimeout(() => {
+//         welcome.style.display="none"
+//         console.log("welcome page display is ( none )")
+//     }, 2000);
+// })
 
 
 
@@ -18,6 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
+let body = document.getElementById("body")
 let lines_p = document.getElementById("lines-page")
 let tickets_p = document.getElementById("tickets-page")
 let subscribe_p = document.getElementById("subscribe-page")
@@ -31,6 +31,7 @@ let subscribe_i = document.getElementById("subscribe-icon")
 // *****************************************************************
 lines_i.addEventListener("click", function () {
     lines_p.style.display="flex"
+    body.style.overflow="hidden"
     setTimeout(() => {
         lines_p.style.opacity="1"
         lines_p.style.width="100vw"
@@ -40,6 +41,7 @@ lines_i.addEventListener("click", function () {
 // *****************************************************************
 tickets_i.addEventListener("click", function () {
     tickets_p.style.display="flex"
+    body.style.overflow="hidden"
     setTimeout(() => {
         tickets_p.style.opacity="1"
         tickets_p.style.width="100vw"
@@ -49,6 +51,7 @@ tickets_i.addEventListener("click", function () {
 // *****************************************************************
 subscribe_i.addEventListener("click", function () {
     subscribe_p.style.display="flex"
+    body.style.overflow="hidden"
     setTimeout(() => {
         subscribe_p.style.opacity="1"
         subscribe_p.style.width="100vw"
@@ -58,6 +61,7 @@ subscribe_i.addEventListener("click", function () {
 //*******************************************************************
 document.querySelectorAll(".back").forEach(function (back) {
     back.addEventListener("click", function () {
+        body.style.overflow="auto"
         document.querySelectorAll(".lsp").forEach(function (el) {
             el.style.width="0vw"
             el.style.opacity="0"
@@ -66,7 +70,7 @@ document.querySelectorAll(".back").forEach(function (back) {
             }, 400);
         })
     })
-})
+});
 
 
 
@@ -95,14 +99,5 @@ if ("serviceWorker" in navigator) {
     .then(() => console.log("SW registered"))
     .catch(err => console.error(err));
 }
-
-
-let map = document.getElementById("map")
-map.addEventListener("click", function () {
-    window.open(
-        "https://www.google.com/maps/dir/?api=1&origin=محطة+أ&destination=محطة+ب&travelmode=transit"//,
-        // "_blank"
-    );
-})
 
 // mobile app mode
