@@ -9,3 +9,13 @@ self.addEventListener("install", e => {
         )
     );
 });
+
+
+
+const ASSETS = [
+    "./",
+    "./index.html",
+    "./css/main.css",
+    "./main.js",
+    "./manifest.json"
+];
