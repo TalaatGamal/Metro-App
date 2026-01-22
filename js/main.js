@@ -9,3 +9,11 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("welcome page display is ( none )")
     }, 2000);
 })
+
+
+
+
+
+
+
+

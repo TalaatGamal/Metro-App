@@ -7,12 +7,12 @@
     "theme_color": "#0f766e",
     "icons": [
         {
-        "src": "/Cairo-metro/images/cairo-metro-high-resolution-logo-2.png",
+        "src": "/images/cairo-metro-high-resolution-logo-2.png",
         "sizes": "192x192",
         "type": "image/png"
         },
         {
-        "src": "/Cairo-metro/images/cairo-metro-high-resolution-logo-2.png",
+        "src": "/images/cairo-metro-high-resolution-logo-2.png",
         "sizes": "512x512",
         "type": "image/png"
         }
