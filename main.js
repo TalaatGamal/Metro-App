@@ -14,9 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
 if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("../mobile/sw.js");
+    navigator.serviceWorker.register("./sw.js")
+    .then(() => console.log("SW registered"))
+    .catch(err => console.error(err));
 }
 
 
