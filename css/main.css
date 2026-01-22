@@ -158,6 +158,8 @@ body{
         font-optical-sizing: auto;
         font-weight: 600;
         font-style: normal;
+        text-decoration: none;
+        color: #000;
     }
     .header .side{
         width: 50px;
