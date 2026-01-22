@@ -12,16 +12,3 @@ self.addEventListener("install", e => {
 });
 
 
-
-
-if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("/mobile/sw.js");
-}
-
-
-
-
-window.open(
-    "https://www.google.com/maps/dir/?api=1&origin=محطة+أ&destination=محطة+ب&travelmode=transit",
-    "_blank"
-);
