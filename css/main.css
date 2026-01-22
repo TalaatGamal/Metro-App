@@ -173,8 +173,9 @@ body{
     }
     .in-app{
         width: 100vw;
-        height: 135vh;
-        padding-top: 10vh;
+        min-height: 135vh;
+        padding-bottom: 10vh;
+        padding-top: 13vh;
         display: flex;
         align-items: center;
         justify-content: start;
@@ -198,11 +199,11 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 15px;
+        gap: 10px;
     }
     .app .icons .icon{
-        width: 110px;
-        height: 100px;
+        width: 100px;
+        height: 90px;
         border-radius: 20px;
         display: flex;
         align-items: center;
@@ -215,7 +216,7 @@ body{
         border: #0000003f solid 3px;
     }
     .app .icons .icon img{
-        width: 40px;
+        width: 35px;
         transform: rotate(90deg);
         background-color: #ffffff;
         border-radius: 7px;
@@ -234,7 +235,7 @@ body{
         justify-content: center;
         flex-direction: column;
         gap: 10px;
-        margin-top: 50px;
+        margin-top: 40px;
         margin-bottom: 20px;
         background-color: #ffffff55;
         /* border: #0000003f solid 3px; */
@@ -242,11 +243,15 @@ body{
     }
     .form label{
         width: 85vw;
-        font-size: 20px;
+        /* font-size: 20px; */
         display: flex;
         align-items: center;
         justify-content: right;
         gap: 10px;
+    }
+    .form label h2{
+        font-size: 20px;
+        min-width: max-content;
     }
     .form input{
         width: 85vw;
@@ -348,6 +353,7 @@ body{
         background-color: #afd7da;
         box-shadow: #00000061 10px 10px 10px 0px;
         width: 85vw;
+        min-height: max-content;
         padding: 15px;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -356,7 +362,7 @@ body{
     .ads h2{
         margin-bottom: 5px;
         color: #ffffff;
-        background-color: #0000009c;
+        background-color: #003f43c9;
         padding: 5px;
         padding-right: 15px;
         border-radius: 5px;
