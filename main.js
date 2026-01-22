@@ -60,6 +60,10 @@ document.querySelectorAll(".back").forEach(function (back) {
     back.addEventListener("click", function () {
         document.querySelectorAll(".lsp").forEach(function (el) {
             el.style.width="0vw"
+            el.style.opacity="0"
+            setTimeout(() => {
+                el.style.display="none"
+            }, 400);
         })
     })
 })
