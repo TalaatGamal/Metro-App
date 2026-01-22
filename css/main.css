@@ -354,7 +354,7 @@ body{
         background: linear-gradient(to bottom , #afd7daa3 , #afd7da00);
         /* background-color: #afd7da; */
         /* box-shadow: #00000061 10px 10px 10px 0px; */
-        width: 85vw;
+        width: 90vw;
         min-height: max-content;
         padding: 15px;
         padding-top: 10px;
@@ -374,7 +374,7 @@ body{
     }
     .ads iframe{
         border-radius: 15px;
-        height: 180px;
+        height: 90px;
     }
     .animation{
         width: 100vw;
@@ -447,6 +447,57 @@ body{
         100%{
             transform: translateY(20vh);
         }
+    }
+    .g-cover{
+        width: 100vw;
+        overflow: hidden;
+        height: 300px;
+        margin-top: 8vh;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+    .gallery{
+        /* width: 100vw; */
+        height: 300px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        animation: gallery 200s infinite linear;
+    }
+    @keyframes gallery {
+        0%{
+            transform: translateX(0%);
+        }
+        50%{
+            transform: translateX(77%);
+        }
+        100%{
+            transform: translateX(0%);
+        }
+    }
+    .gallery .img{
+        min-width: 440px;
+        height: 100%;
+        /* border-radius: 20px; */
+        background-image: url(https://www.elaosboa.com/wp-content/uploads/2024/05/elaosboa06395.jpg);
+        /* background-image: url(https://imgy.pro/alamelsyarat/768x433/12026112458638168086.jpg); */
+        /* background-image: url(https://media.almalnews.com/2025/11/41752/large/536672-%D9%85%D8%AA%D8%B1%D9%88.jpg); */
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .gallery .i-2{
+    background-image: url(https://aboutmsr.com/wp-content/uploads/2026/01/WhatsApp-Image-2026-01-02-at-6.26.09-PM-copy.jpg);
+    }
+    .gallery .i-3{
+        background-image: url(https://images.seeklogo.com/logo-png/17/2/cairo-metro-logo-png_seeklogo-172246.png);
+        background-size: 70%;
+        /* background-image: url(https://media.elwatannews.com/media/img/mediaarc/large/13801116701714026389.jpg); */
+        /* background-image: url(https://media.gemini.media/img/medium/2021/10/9/2021_10_9_18_48_48_426.jpg); */
+    }
+    .gallery .i-4{
+        background-image: url(https://media.almalnews.com/2025/11/41752/large/536672-%D9%85%D8%AA%D8%B1%D9%88.jpg);
     }
     footer{
         width: 100vw;
