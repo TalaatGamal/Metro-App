@@ -24,7 +24,7 @@ if ("serviceWorker" in navigator) {
 let map = document.getElementById("map")
 map.addEventListener("click", function () {
     window.open(
-        "https://www.google.com/maps/dir/?api=1&origin=محطة+أ&destination=محطة+ب&travelmode=transit",
-        "_blank"
+        "https://www.google.com/maps/dir/?api=1&origin=محطة+أ&destination=محطة+ب&travelmode=transit"//,
+        // "_blank"
     );
 })
