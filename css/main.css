@@ -173,7 +173,7 @@ body{
     }
     .in-app{
         width: 100vw;
-        min-height: 120vh;
+        height: 130vh;
         padding-top: 10vh;
         display: flex;
         align-items: center;
@@ -331,9 +331,11 @@ body{
         align-items: center;
         justify-content: space-between;
         gap: 10px;
-        font-size: 25px;
         padding: 8px;
         padding-right: 16px;
+    }
+    .btn h2{
+        font-size: 25px;
     }
     .btn img{
         width: 115px;
@@ -341,6 +343,24 @@ body{
         background-color: #ffffff;
         padding: 0px 40px 0px 40px;
         opacity: 80%;
+    }
+    .ads{
+        background-color: #afd7da;
+        box-shadow: #00000061 10px 10px 10px 0px;
+        width: 85vw;
+        padding: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 20px;
+    }
+    .ads h2{
+        margin-bottom: 5px;
+        color: #ffffff;
+        background-color: #0000009c;
+        padding: 5px;
+        padding-right: 15px;
+        border-radius: 5px;
+        font-size: 22px;
     }
     .animation{
         width: 100vw;
