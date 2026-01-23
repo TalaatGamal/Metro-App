@@ -34,6 +34,8 @@
 }
 .lsp .title h2{
     font-size: 25px;
+    color: red;
+    background-color: #000000;
     /* color: #ffffff; */
 }
 .lsp .title-img{
