@@ -15,11 +15,12 @@
     gap: 10px;
     color: #ffffff;
     border: #ffffff00 solid 5px;
-    border-top: #0099ff solid 5px;
-    border-bottom: #0099ff solid 5px;
+    border-top: #0099c377 solid 5px;
+    border-bottom: #0099c377 solid 5px;
     padding: 10px;
     padding-left: 0px;
     padding-right: 0px;
+    /*display: none; /*****************************/
 }
 .results .type{
     width: 95%;

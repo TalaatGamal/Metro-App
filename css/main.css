@@ -467,7 +467,7 @@ body{
         display: flex;
         align-items: center;
         justify-content: right;
-        background-color: #007d8eaf;
+        background-color: rgba(0, 118, 139, 0.237);
         border-radius: 30px;
         border: #006f8e00 solid 5px;
         border-left: #007d8eaf solid 5px;
