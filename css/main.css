@@ -216,6 +216,11 @@ body{
         padding-top: 10px;
         padding-bottom: 5px;
         border: #0000003f solid 3px;
+        transition: 0.3s;
+    }
+    .app .icons .icon:hover{
+        background-color: rgba(0, 118, 139, 0.237);
+        border: rgb(0, 118, 139) solid 3px;
     }
     .app .icons .icon img{
         width: 35px;
@@ -262,9 +267,14 @@ body{
         border-radius: 10px;
         padding: 10px 25px 10px 25px;
         font-size: 20px;
+        transition: 0.3s;
     }
     .form input::placeholder{
         font-size: 20px;
+    }
+    .form input:focus{
+        border: rgb(0, 118, 139) solid 3px;
+        outline: none;
     }
     .animated-line{
         width: 65%;
@@ -341,6 +351,10 @@ body{
         padding: 8px;
         padding-right: 16px;
         cursor: pointer;
+        transition: 0.3s;
+    }
+    .btn:hover{
+        background-color: #000;
     }
     .btn h2{
         font-size: 25px;
@@ -594,6 +608,31 @@ body{
         color: #383838;
         font-size: 17px;
         font-weight: 600;
+    }
+    .air-options{
+        width: 110px;
+        height: 40px;
+        border-radius: 10px;
+        position: fixed;
+        z-index: 9;
+        right: 20px;
+        bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .air-options .op{
+        width: 40px;
+        height: 40px;
+        background-color: #ffffff;
+        border: rgb(0, 118, 139) solid 3px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        color: rgb(0, 35, 42);
     }
 /* app */
 
