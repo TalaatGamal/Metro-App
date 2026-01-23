@@ -81,6 +81,97 @@ document.querySelectorAll(".back").forEach(function (back) {
 
 
 
+// window.addEventListener("scroll", () => {
+//     let air_options = document.getElementById("air-options")
+//     const scrollTop = window.scrollY;
+//     const pageHeight =
+//         document.documentElement.scrollHeight - window.innerHeight;
+
+//     const scrollPercent = (scrollTop / pageHeight) * 100;
+
+//     if (scrollPercent > 10) {
+//         console.log("عدّينا 50% من الصفحة");
+//         air_options.style.display="flex"
+//         setTimeout(() => {
+//             air_options.style.bottom="20px"
+//             air_options.style.opacity="1"
+//         }, 100);
+//     }
+//     if (scrollPercent < 10) {
+//             air_options.style.bottom="40px"
+//             air_options.style.opacity="0"
+//         setTimeout(() => {
+//             air_options.style.display="none"
+//         }, 1000);
+//     }
+// });
+
+
+
+
+
+
+const air_options = document.getElementById("air-options");
+let shown = false;
+
+window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY;
+    const pageHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = (scrollTop / pageHeight) * 100;
+
+    if (scrollPercent > 10 && !shown) {
+        shown = true;
+        air_options.style.display = "flex";
+        setTimeout(() => {
+            air_options.style.bottom = "30px";
+            air_options.style.opacity = "1";
+        }, 50);
+    } else if (scrollPercent <= 10 && shown) {
+        shown = false;
+        air_options.style.bottom = "60px";
+        air_options.style.opacity = "0";
+        setTimeout(() => {
+            air_options.style.display = "none";
+        }, 500);
+    }
+});
+
+
+let top_arrow = document.getElementById("top-arrow");
+
+top_arrow.addEventListener("click", function () {
+    window.scrollTo({
+        top: 0,
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -616,11 +616,16 @@ body{
         position: fixed;
         z-index: 9;
         right: 20px;
-        bottom: 20px;
-        display: flex;
+        /* bottom: 20px; */
+        /* display: flex; */
         align-items: center;
         justify-content: center;
-        gap: 10px;
+        gap: 5px;
+        transition: 1s;
+        
+        display: none;
+        opacity: 0;
+        bottom: 50px;
     }
     .air-options .op{
         width: 40px;
