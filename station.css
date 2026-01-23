@@ -1,7 +1,7 @@
 
 .results{
     width: 90vw;
-    min-height: 400px;
+    height: 400px;
     background-color: rgba(0, 118, 139, 0.237);
     /* position: absolute;
     z-index: 9;
@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: start;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     color: #ffffff;
     border: #ffffff00 solid 5px;
     border-top: #0099ff solid 5px;
@@ -26,43 +26,61 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 10px;
+}
+.results .type .img{
+    background-color: #ffffff;
+    border: #006581 solid 3px;
+    min-width: 60px;
+    height: 55px;
+    border-radius: 10px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/7/77/Cairo_metro_logo2012.svg);
+    background-position: center;
+    background-size: 85%;
+    background-repeat: no-repeat;
 }
 .results .type h2{
-    font-size: 18px;
-    color: #ff0000;
+    font-size: 20px;
+    color: #006581;
     font-weight: bold;
     background-color: #ffffff;
     padding: 7px;
     border-radius: 10px;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: start;
     flex-direction: column;
+    width: 100%;
 }
 .results span{
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    color: #ff0000;
+    /* flex-direction: column; */
     gap: 10px;
-    border-top: #006581 dashed 2px;
-    margin-top: 4px;
+    /* border-top: #006581 dashed 2px; */
+    /* margin-top: 4px; */
 }
 .results span span{
     border: none;
+    /* transform: rotate(-90deg); */
 }
 .arrow{
     font-size: 18px;
     color: #006581;
 }
-.results .num{
-    width: 50px;
-    height: 45px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ff0000;
+.box{
+    font-size: 20px;
+    color: #006581;
+    font-weight: bold;
     background-color: #ffffff;
-    font-size: 30px;
-    margin-right: 40px;
+    padding: 7px;
+    border-radius: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    width: 95%;
+    min-height: 81%;
 }
