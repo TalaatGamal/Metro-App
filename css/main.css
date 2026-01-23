@@ -547,7 +547,7 @@ body{
     footer h3{
         font-weight: 600;
         color: #383838;
-        font-size: 17px;
+        font-size: 15px;
     }
     footer .info{
         display: flex;
@@ -582,7 +582,7 @@ body{
         gap: 5px;
         color: #383838;
         text-decoration: none;
-        font-size: 17px;
+        font-size: 15px;
         font-weight: 600;
     }
     footer .flash-message{
