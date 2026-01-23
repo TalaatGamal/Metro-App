@@ -517,7 +517,7 @@ body{
     .gallery .i-3{
         background-image: url(https://images.seeklogo.com/logo-png/17/2/cairo-metro-logo-png_seeklogo-172246.png);
         background-size: 90%;
-        min-width: 200px;
+        min-width: 250px;
         /* background-image: url(https://media.elwatannews.com/media/img/mediaarc/large/13801116701714026389.jpg); */
         /* background-image: url(https://media.gemini.media/img/medium/2021/10/9/2021_10_9_18_48_48_426.jpg); */
     }
@@ -572,7 +572,7 @@ body{
         border-radius: 10px;
     }
     footer .media i{
-        color: #006eff;
+        color: #006779;
     }
     footer .media a{
         display: flex;
