@@ -479,7 +479,7 @@ body{
         display: flex;
         align-items: center;
         gap: 20px;
-        animation: gallery 20s infinite linear;
+        animation: gallery 150s infinite linear;
         margin: 0px 300px 0px 200px;
         padding: 10px;
     }
@@ -527,14 +527,9 @@ body{
     }
     .gallery .i-5{
         background-image: url(https://english.ahram.org.eg/Media/News/2022/10/5/41_2022-638006083322011997-201.jpg);
-        /* background-image: url(https://images.squarespace-cdn.com/content/v1/5f14d04ebd60fa3de12e3960/1608674833738-PO13X78Z55YW7Z9ZPNJS/Train_ticket_bariiers_in_Cairo_metro.JPG); */
-        /* background-image: url(https://media.almalnews.com/2025/11/41752/large/536672-%D9%85%D8%AA%D8%B1%D9%88.jpg); */
     }
     .gallery .i-6{
         background-image: url(https://www.systra.com/wp-content/uploads/2024/01/nasser-station-platform-level.jpg);
-        /* background-image: url(https://english.ahram.org.eg/Media/News/2022/10/5/41_2022-638006083322011997-201.jpg); */
-        /* background-image: url(https://images.squarespace-cdn.com/content/v1/5f14d04ebd60fa3de12e3960/1608674833738-PO13X78Z55YW7Z9ZPNJS/Train_ticket_bariiers_in_Cairo_metro.JPG); */
-        /* background-image: url(https://media.almalnews.com/2025/11/41752/large/536672-%D9%85%D8%AA%D8%B1%D9%88.jpg); */
     }
     footer{
         width: 100vw;
