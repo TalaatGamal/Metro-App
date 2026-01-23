@@ -81,89 +81,40 @@ document.querySelectorAll(".back").forEach(function (back) {
 
 
 
-// window.addEventListener("scroll", () => {
-//     let air_options = document.getElementById("air-options")
-//     const scrollTop = window.scrollY;
-//     const pageHeight =
-//         document.documentElement.scrollHeight - window.innerHeight;
+// sidebar
 
-//     const scrollPercent = (scrollTop / pageHeight) * 100;
+    let side_icon = document.getElementById("side-icon");
+    let sidebar = document.getElementById("sidebar");
 
-//     if (scrollPercent > 10) {
-//         console.log("عدّينا 50% من الصفحة");
-//         air_options.style.display="flex"
-//         setTimeout(() => {
-//             air_options.style.bottom="20px"
-//             air_options.style.opacity="1"
-//         }, 100);
-//     }
-//     if (scrollPercent < 10) {
-//             air_options.style.bottom="40px"
-//             air_options.style.opacity="0"
-//         setTimeout(() => {
-//             air_options.style.display="none"
-//         }, 1000);
-//     }
-// });
+    let bars = document.getElementById("bars");
+    let x = document.getElementById("x");
 
-
-
-
-
-
-const air_options = document.getElementById("air-options");
-let shown = false;
-
-window.addEventListener("scroll", () => {
-    const scrollTop = window.scrollY;
-    const pageHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const scrollPercent = (scrollTop / pageHeight) * 100;
-
-    if (scrollPercent > 10 && !shown) {
-        shown = true;
-        air_options.style.display = "flex";
-        setTimeout(() => {
-            air_options.style.bottom = "30px";
-            air_options.style.opacity = "1";
-        }, 50);
-    } else if (scrollPercent <= 10 && shown) {
-        shown = false;
-        air_options.style.bottom = "60px";
-        air_options.style.opacity = "0";
-        setTimeout(() => {
-            air_options.style.display = "none";
-        }, 500);
-    }
-});
-
-
-let top_arrow = document.getElementById("top-arrow");
-
-top_arrow.addEventListener("click", function () {
-    window.scrollTo({
-        top: 0,
+    side_icon.addEventListener("click", function () {
+        
+        if (getComputedStyle(sidebar).right === "0px") {
+            
+            sidebar.style.right = "-300px";
+            sidebar.style.opacity = "0";
+            setTimeout(() => {
+                sidebar.style.display = "none";
+            }, 300);
+            
+            bars.style.display = "block";
+            x.style.display = "none";
+        } else {
+            
+            sidebar.style.display = "flex";
+            setTimeout(() => {
+                sidebar.style.right = "0px";
+                sidebar.style.opacity = "1";
+            }, 10);
+            bars.style.display = "none";
+            x.style.display = "block";
+        }
     });
-});
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// sidebar
 
 
 
