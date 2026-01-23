@@ -364,7 +364,7 @@ body{
         border-radius: 25px;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: start;
         flex-direction: column;
         gap: 10px;
     }
@@ -460,35 +460,43 @@ body{
         }
     }
     .g-cover{
-        width: 100vw;
+        width: 97vw;
         overflow: hidden;
-        height: 300px;
+        /* height: 300px; */
         margin-top: 2vh;
         display: flex;
         align-items: center;
         justify-content: right;
+        background-color: #007d8eaf;
+        border-radius: 30px;
+        border: #006f8e00 solid 5px;
+        border-left: #007d8eaf solid 5px;
+        border-right: #007d8eaf solid 5px;
     }
     .gallery{
         /* width: 100vw; */
-        height: 300px;
+        height: 250px;
         display: flex;
         align-items: center;
         gap: 20px;
-        animation: gallery 200s infinite linear;
+        animation: gallery 20s infinite linear;
+        margin: 0px 300px 0px 200px;
+        padding: 10px;
     }
     @keyframes gallery {
         0%{
             transform: translateX(0%);
         }
         50%{
-            transform: translateX(77%);
+            /* transform: translateX(77%); */
+            transform: translateX(110%);
         }
         100%{
             transform: translateX(0%);
         }
     }
     .gallery .img{
-        min-width: 440px;
+        min-width: 400px;
         height: 100%;
         /* border-radius: 20px; */
         background-image: url(https://www.elaosboa.com/wp-content/uploads/2024/05/elaosboa06395.jpg);
@@ -497,18 +505,36 @@ body{
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        border-radius: 25px;
+        border: #ffffff solid 3px;
+        box-shadow: #0000007c 0px 0px 10px 0px;
+        background-color: #ffffff;
     }
     .gallery .i-2{
-    background-image: url(https://aboutmsr.com/wp-content/uploads/2026/01/WhatsApp-Image-2026-01-02-at-6.26.09-PM-copy.jpg);
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Cairo_Metro_map.png/960px-Cairo_Metro_map.png);
+    /* background-image: url(https://aboutmsr.com/wp-content/uploads/2026/01/WhatsApp-Image-2026-01-02-at-6.26.09-PM-copy.jpg); */
     }
     .gallery .i-3{
         background-image: url(https://images.seeklogo.com/logo-png/17/2/cairo-metro-logo-png_seeklogo-172246.png);
-        background-size: 70%;
+        background-size: 90%;
+        min-width: 200px;
         /* background-image: url(https://media.elwatannews.com/media/img/mediaarc/large/13801116701714026389.jpg); */
         /* background-image: url(https://media.gemini.media/img/medium/2021/10/9/2021_10_9_18_48_48_426.jpg); */
     }
     .gallery .i-4{
-        background-image: url(https://media.almalnews.com/2025/11/41752/large/536672-%D9%85%D8%AA%D8%B1%D9%88.jpg);
+        background-image: url(https://images.squarespace-cdn.com/content/v1/5f14d04ebd60fa3de12e3960/1608674833738-PO13X78Z55YW7Z9ZPNJS/Train_ticket_bariiers_in_Cairo_metro.JPG);
+        /* background-image: url(https://media.almalnews.com/2025/11/41752/large/536672-%D9%85%D8%AA%D8%B1%D9%88.jpg); */
+    }
+    .gallery .i-5{
+        background-image: url(https://english.ahram.org.eg/Media/News/2022/10/5/41_2022-638006083322011997-201.jpg);
+        /* background-image: url(https://images.squarespace-cdn.com/content/v1/5f14d04ebd60fa3de12e3960/1608674833738-PO13X78Z55YW7Z9ZPNJS/Train_ticket_bariiers_in_Cairo_metro.JPG); */
+        /* background-image: url(https://media.almalnews.com/2025/11/41752/large/536672-%D9%85%D8%AA%D8%B1%D9%88.jpg); */
+    }
+    .gallery .i-6{
+        background-image: url(https://www.systra.com/wp-content/uploads/2024/01/nasser-station-platform-level.jpg);
+        /* background-image: url(https://english.ahram.org.eg/Media/News/2022/10/5/41_2022-638006083322011997-201.jpg); */
+        /* background-image: url(https://images.squarespace-cdn.com/content/v1/5f14d04ebd60fa3de12e3960/1608674833738-PO13X78Z55YW7Z9ZPNJS/Train_ticket_bariiers_in_Cairo_metro.JPG); */
+        /* background-image: url(https://media.almalnews.com/2025/11/41752/large/536672-%D9%85%D8%AA%D8%B1%D9%88.jpg); */
     }
     footer{
         width: 100vw;
