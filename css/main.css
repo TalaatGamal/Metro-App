@@ -236,7 +236,7 @@ body{
     }
     .form{
         width: 400px;
-        min-height: 200px;
+        min-height: 300px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -253,12 +253,72 @@ body{
         /* font-size: 20px; */
         display: flex;
         align-items: center;
-        justify-content: right;
+        justify-content: space-between;
+        /* background-color: #0000006b; */
         gap: 10px;
+    }
+    .form label .img{
+        background-image: url(https://cdn-icons-png.flaticon.com/128/10473/10473299.png);
+        /* background-image: url(https://cdn-icons-png.flaticon.com/128/1040/1040993.png); */
+        background-position: center;
+        background-size: cover;
+        width: 25px;
+        height: 25px;
+    }
+    /* .form label .imga{
+        background-image: url(https://cdn-icons-png.freepik.com/512/1536/1536486.png?ga=GA1.1.1214273586.1750358942);
+        background-position: center;
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        margin-top: 150px;
+        margin-right: 400px;
+        animation: hand 1s infinite linear;
+        opacity: 50%;
+    }
+    @keyframes hand {
+        0%{
+            width: 40px;
+            height: 40px;
+        }
+        50%{
+            width: 50px;
+            height: 50px;
+        }
+        100%{
+            width: 40px;
+            height: 40px;
+        }
+    } */
+    .form label .hand{
+        position: absolute;
+        margin-top: 140px;
+        margin-right: 480px;
+        animation: hand2 0.9s infinite linear;
+        opacity: 70%;
+    }
+    @keyframes hand2 {
+        0%{
+            font-size: 25px;
+        }
+        50%{
+            font-size: 30px;
+        }
+        100%{
+            font-size:25px;
+        }
     }
     .form label h2{
         font-size: 20px;
         min-width: max-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .form label h2 i{
+        color: #0078ab;
     }
     .form input{
         width: 85vw;

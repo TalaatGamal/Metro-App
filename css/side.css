@@ -23,12 +23,12 @@
 }
 .sidebar h2{
     color: #e0e0e0;
-    background-color: #006779;
+    background-color: #006779d0;
     font-size: 20px;
     width: 90%;
     border: #ffffffd7 solid 2px;
     border-radius: 10px;
-    padding: 10px;
+    padding: 8px;
     font-weight: 600;
     display: flex;
     align-items: center;
