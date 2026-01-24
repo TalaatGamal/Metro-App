@@ -42,7 +42,7 @@ body{
     gap: 50px;
     backdrop-filter: blur(5px);
     /* background-color: #ffffff32; */
-    padding: 8vh 0px 0px 0px;
+    padding: 10vh 0px 0px 0px;
     background-color: #ffffff;
     overflow: hidden;
     position: fixed;
@@ -52,11 +52,12 @@ body{
     transition: 1s;
 }
 .welcome .img{
-    background-image: url(../images/cairo-metro-high-resolution-logo-2.png);
+    background-image: url(../App/logos/logo-1.png);
+    /* background-image: url(../images/cairo-metro-high-resolution-logo-2.png); */
     background-position: center;
     background-size: cover;
-    width: 360px;
-    height: 190px;
+    width: 300px;
+    height: 100px;
     border-radius: 20px;
     /* box-shadow: #0038332d 10px 10px 10px 0px; */
     /* border: #00b3a100 solid 4px;
@@ -69,6 +70,26 @@ body{
     padding: 0px 20px 0px 20px;
     text-align: center;
     color: #003833;
+    width: 400px;
+    /* background-color: #0000006a; */
+}
+.welcome .text h1{
+    font-size: 27px;
+    transition: 1s;
+}
+.welcome .text h1 span{
+    font-size: 37px;
+    margin-bottom: 140px;
+    display: inline-flex;
+    /* border-bottom: #00000024 solid 4px; */
+    padding-bottom: 10px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.welcome .text h1 .star{
+    margin-left: 10px;
 }
 .welcome .logo{
     position: fixed;
@@ -77,7 +98,7 @@ body{
     font-size: 25px;
 }
 .load{
-    width: 100vw;
+    width: 100%;
     /* background-color: #000000ae; */
     display: flex;
     align-items: center;
@@ -150,7 +171,7 @@ body{
         align-items: center;
         justify-content: space-between;
         flex-direction: row-reverse;
-        padding: 0px 15px 0px 20px;
+        padding: 0px 15px 0px 40px;
     }
     .header .logo{
         font-size: 25px;
@@ -160,6 +181,13 @@ body{
         font-style: normal;
         text-decoration: none;
         color: #000;
+        background-image: url(../App/logos/logo-3.png);
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 170px;
+        height: 40px;
+        /* border: #000 solid 1px; */
     }
     .header .side{
         width: 50px;
@@ -176,7 +204,8 @@ body{
     .in-app{
         width: 100vw;
         padding-bottom: 5vh;
-        padding-top: 13vh;
+        padding-top: 15vh;
+        /* padding-top: 25vh; */
         display: flex;
         align-items: center;
         justify-content: start;

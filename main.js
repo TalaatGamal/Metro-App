@@ -1,14 +1,14 @@
-// let welcome = document.getElementById("welcome")
+let welcome = document.getElementById("welcome")
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     setTimeout(() => {
-//         welcome.style.marginLeft="100vw"
-//     }, 1000);
-//     setTimeout(() => {
-//         welcome.style.display="none"
-//         console.log("welcome page display is ( none )")
-//     }, 2000);
-// })
+document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(() => {
+        welcome.style.marginLeft="100vw"
+    }, 3000);
+    setTimeout(() => {
+        welcome.style.display="none"
+        console.log("welcome page display is ( none )")
+    }, 4000);
+})
 
 
 
@@ -120,7 +120,14 @@ document.querySelectorAll(".back").forEach(function (back) {
 
 
 
+let inputs = document.querySelectorAll(".form input");
+let hand = document.querySelector(".hand")
 
+inputs.forEach(input => {
+    input.addEventListener("mousedown", function () {
+        hand.style.display="none"
+    });
+});
 
 
 
