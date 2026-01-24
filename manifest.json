@@ -1,5 +1,5 @@
 {
-    "name": "Metro Egypt",
+    "name": "Egypt Metro",
     "short_name": "Metro",
     "start_url": "/Metro-App/",
     "display": "standalone",
@@ -7,12 +7,12 @@
     "theme_color": "#0f766e",
     "icons": [
         {
-        "src": "./images/cairo-metro-high-resolution-logo-2.png",
+        "src": "./App/logos/logo-2.png",
         "sizes": "192x192",
         "type": "image/png"
         },
         {
-        "src": "./images/cairo-metro-high-resolution-logo-2.png",
+        "src": "./App/logos/logo-1.png",
         "sizes": "512x512",
         "type": "image/png"
         }
