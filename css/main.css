@@ -172,7 +172,7 @@ body{
         align-items: center;
         justify-content: space-between;
         flex-direction: row-reverse;
-        padding: 0px 15px 0px 40px;
+        padding: 0px 15px 0px 30px;
     }
     .header .logo{
         font-size: 25px;
@@ -295,38 +295,12 @@ body{
         width: 25px;
         height: 25px;
     }
-    /* .form label .imga{
-        background-image: url(https://cdn-icons-png.freepik.com/512/1536/1536486.png?ga=GA1.1.1214273586.1750358942);
-        background-position: center;
-        background-size: cover;
-        width: 50px;
-        height: 50px;
+    .form .hand{
         position: absolute;
-        margin-top: 150px;
-        margin-right: 400px;
-        animation: hand 1s infinite linear;
-        opacity: 50%;
-    }
-    @keyframes hand {
-        0%{
-            width: 40px;
-            height: 40px;
-        }
-        50%{
-            width: 50px;
-            height: 50px;
-        }
-        100%{
-            width: 40px;
-            height: 40px;
-        }
-    } */
-    .form label .hand{
-        position: absolute;
-        margin-top: 155px;
-        margin-right: 480px;
+        margin-top: 50px;
+        margin-right: 10px;
         animation: hand2 0.9s infinite linear;
-        opacity: 70%;
+        opacity: 80%;
         z-index: 9;
         color: #0d3144;
     }
@@ -368,26 +342,16 @@ body{
         width: 100px;
         height: 90%;
         border-radius: 14px;
-        opacity: 75%;
+        opacity: 80%;
         display: flex;
         align-items: center;
         justify-content: center;
-        /* background-color: #006779; */
-        /* color: #ffffff; */
-        /* background-color: #00000018; */
-        border: #00677900 solid 3px;
-        border-right: #006779 solid 3px;
-        border-left: #006779 solid 3px;
         color: #005969;
         font-size: 18px;
-        font-weight: 650;
+        font-weight: 700;
         margin-left: 6px;
     }
     .form input{
-        /* width: 85vw;
-        height: 50px;
-        border: #0000003f solid 3px;
-        border-radius: 10px; */
         border: none;
         height: 100%;
         width: 230px;
@@ -478,7 +442,7 @@ body{
         justify-content: space-between;
         gap: 10px;
         /* padding: 8px; */
-        padding-right: 16px;
+        padding-right: 20px;
         cursor: pointer;
         transition: 0.3s;
         margin-top: 20px;

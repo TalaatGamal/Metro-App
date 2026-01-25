@@ -147,9 +147,9 @@
     flex-direction: column;
     gap: 20px;
     color: #ffffff;
-    border: #ffffff00 solid 5px;
-    border-top: #0099c377 solid 5px;
-    border-bottom: #0099c377 solid 5px;
+    border: #0099c377 solid 5px;
+    /* border-top: #0099c377 solid 5px;
+    border-bottom: #0099c377 solid 5px; */
     padding: 10px;
     padding-left: 0px;
     padding-right: 0px;
@@ -200,7 +200,6 @@
     font-size: 20px;
     color: #006581;
     font-weight: bold;
-    background-color: #ffffff;
     padding: 7px;
     border-radius: 10px;
     display: flex;
@@ -208,6 +207,11 @@
     justify-content: start;
     flex-direction: column;
     width: 100%;
+    overflow: hidden;
+}
+.lines-r .type h2 span{
+    min-width: max-content;
+    font-size: 18px;
 }
 .lines-r span{
     display: inline-flex;
@@ -246,10 +250,10 @@
     border-bottom: #006581 double 3px;
     padding-bottom: 5px;
 }
-.lines-r .box-1{
+.lines-r .box-2{
     display: none;
 }
-.lines-r .box-3{
+.lines-r .box-1{
     display: none;
 }
 .lines-r .stations{
@@ -322,11 +326,9 @@
     align-items: center;
     justify-content: right;
     flex-direction: row-reverse;
-    /* padding-right: 10px; */
-    /* background-color: #610909; */
     font-size: 20px;
     border-radius: 8px;
-        /* border: #00a2ff6f solid 2px; */
+    color: #000;
 }
 .lines-r .stations .blaces h2 span{
     width: 40px;
@@ -334,4 +336,5 @@
     margin-left: 15px;
     border-radius: 7px;
     border: #006779 solid 2px;
+    color: #000;
 }
