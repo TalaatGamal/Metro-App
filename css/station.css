@@ -239,7 +239,7 @@
     justify-content: start;
     flex-direction: column;
     width: 95%;
-    height: 400px;
+    height: 500px;
     /* display: none; */
 }
 .lines-r .box .type{
@@ -260,7 +260,7 @@
     padding-bottom: 10px;
     padding-right: 10px;
     width: 100%;
-    height: 310px;
+    height: 410px;
     /* background-color: #00000033; */
     border-radius: 0px 0px 5px 5px;
     overflow-x: hidden;
@@ -333,5 +333,5 @@
     height: 30px;
     margin-left: 15px;
     border-radius: 7px;
-    border: #0088ffc2 solid 2px;
+    border: #006779 solid 2px;
 }
