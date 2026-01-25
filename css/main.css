@@ -323,10 +323,12 @@ body{
     } */
     .form label .hand{
         position: absolute;
-        margin-top: 140px;
+        margin-top: 155px;
         margin-right: 480px;
         animation: hand2 0.9s infinite linear;
         opacity: 70%;
+        z-index: 9;
+        color: #0d3144;
     }
     @keyframes hand2 {
         0%{
@@ -340,30 +342,67 @@ body{
         }
     }
     .form label h2{
-        font-size: 20px;
+        font-size: 18px;
+        font-weight: 600;
         min-width: max-content;
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 10px;
+        color: #000000ca;
     }
     .form label h2 i{
         color: #0078ab;
     }
-    .form input{
+    .form .input{
         width: 85vw;
         height: 50px;
         border: #0000003f solid 3px;
-        border-radius: 10px;
+        border-radius: 15px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .form .choose{
+        width: 100px;
+        height: 90%;
+        border-radius: 14px;
+        opacity: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background-color: #006779; */
+        /* color: #ffffff; */
+        /* background-color: #00000018; */
+        border: #00677900 solid 3px;
+        border-right: #006779 solid 3px;
+        border-left: #006779 solid 3px;
+        color: #005969;
+        font-size: 18px;
+        font-weight: 650;
+        margin-left: 6px;
+    }
+    .form input{
+        /* width: 85vw;
+        height: 50px;
+        border: #0000003f solid 3px;
+        border-radius: 10px; */
+        border: none;
+        height: 100%;
+        width: 230px;
         padding: 10px 25px 10px 25px;
-        font-size: 20px;
+        font-size: 18px;
+        font-weight: 600;
         transition: 0.3s;
+        color: #0000009e;
+        background-color: #00000000;
     }
     .form input::placeholder{
         font-size: 20px;
     }
     .form input:focus{
-        border: rgb(0, 118, 139) solid 3px;
+        /* border: rgb(0, 118, 139) solid 3px; */
         outline: none;
     }
     .animated-line{
@@ -438,10 +477,11 @@ body{
         align-items: center;
         justify-content: space-between;
         gap: 10px;
-        padding: 8px;
+        /* padding: 8px; */
         padding-right: 16px;
         cursor: pointer;
         transition: 0.3s;
+        margin-top: 20px;
     }
     .btn:hover{
         background-color: #000;
@@ -450,11 +490,18 @@ body{
         font-size: 25px;
     }
     .btn img{
-        width: 115px;
+        width: 100px;
         border-radius: 10px;
         background-color: #ffffff;
-        padding: 0px 40px 0px 40px;
+        padding: 0px 30px 0px 30px;
+
+        height: 80%;
+        border-radius: 10px;
         opacity: 80%;
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+        margin-left: 6px;
     }
     .ads{
         background: linear-gradient(to bottom , #afd7daa3 , #afd7da00);
