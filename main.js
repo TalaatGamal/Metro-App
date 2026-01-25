@@ -120,16 +120,6 @@ document.querySelectorAll(".back").forEach(function (back) {
 
 
 
-let inputs = document.querySelectorAll(".form input");
-let hand = document.querySelector(".hand")
-
-inputs.forEach(input => {
-    input.addEventListener("mousedown", function () {
-        hand.style.display="none"
-    });
-});
-
-
 
 
 

@@ -135,7 +135,7 @@
 .lines-r{
     width: 90vw;
     min-height: 400px;
-    background-color: rgba(0, 118, 139, 0.237);
+    background-color: #C3DFE4;
     /* position: absolute;
     z-index: 9;
     top: 480px; */
@@ -153,7 +153,11 @@
     padding: 10px;
     padding-left: 0px;
     padding-right: 0px;
-    /*display: none; /*****************************/
+    display: none; /*****************************/
+    transition: 1s;
+    position: absolute;
+    z-index: 9;
+    /* margin-top: 340px; */
 }
 .lines-r .title{
     background-color: #ffffff;
@@ -176,7 +180,7 @@
     justify-content: start;
     flex-direction: column;
     gap: 25px;
-    display: none;
+    /* display: none; */
 }
 .lines-r .type{
     width: 100%;
@@ -184,6 +188,12 @@
     align-items: center;
     justify-content: space-between;
     gap: 10px;
+}
+.lines-r .types .type{
+    width: 95%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
 }
 .lines-r .type .img{
     background-color: #ffffff;
@@ -250,10 +260,13 @@
     border-bottom: #006581 double 3px;
     padding-bottom: 5px;
 }
+.lines-r .box-1{
+    display: none;
+}
 .lines-r .box-2{
     display: none;
 }
-.lines-r .box-1{
+.lines-r .box-3{
     display: none;
 }
 .lines-r .stations{
