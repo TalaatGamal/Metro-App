@@ -20,7 +20,7 @@
     padding: 10px;
     padding-left: 0px;
     padding-right: 0px;
-    display: none; /*****************************/
+    /*display: none; /*****************************/
 }
 .results .type{
     width: 95%;
@@ -67,11 +67,11 @@
     border: none;
     /* transform: rotate(-90deg); */
 }
-.arrow{
+.results .arrow{
     font-size: 18px;
     color: #006581;
 }
-.box{
+.results .box{
     font-size: 20px;
     color: #006581;
     font-weight: bold;
@@ -84,4 +84,254 @@
     flex-direction: column;
     width: 95%;
     min-height: 79.5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.lines-r{
+    width: 90vw;
+    min-height: 400px;
+    background-color: rgba(0, 118, 139, 0.237);
+    /* position: absolute;
+    z-index: 9;
+    top: 480px; */
+    border-radius: 20px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 20px;
+    color: #ffffff;
+    border: #ffffff00 solid 5px;
+    border-top: #0099c377 solid 5px;
+    border-bottom: #0099c377 solid 5px;
+    padding: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    /*display: none; /*****************************/
+}
+.lines-r .title{
+    background-color: #ffffff;
+    width: 95%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.lines-r .title h2{
+    color: #000000c2;
+    font-weight: 600;
+    font-size: 22px;
+}
+.lines-r .types{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 25px;
+    display: none;
+}
+.lines-r .type{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.lines-r .type .img{
+    background-color: #ffffff;
+    border: #006581 solid 3px;
+    min-width: 60px;
+    height: 55px;
+    border-radius: 10px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/7/77/Cairo_metro_logo2012.svg);
+    background-position: center;
+    background-size: 85%;
+    background-repeat: no-repeat;
+}
+.lines-r .type h2{
+    font-size: 20px;
+    color: #006581;
+    font-weight: bold;
+    background-color: #ffffff;
+    padding: 7px;
+    border-radius: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    width: 100%;
+}
+.lines-r span{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff0000;
+    /* flex-direction: column; */
+    gap: 10px;
+    /* border-top: #006581 dashed 2px; */
+    /* margin-top: 4px; */
+}
+.lines-r span span{
+    border: none;
+    /* transform: rotate(-90deg); */
+}
+.lines-r .arrow{
+    font-size: 18px;
+    color: #006581;
+}
+.lines-r .box{
+    font-size: 20px;
+    color: #006581;
+    font-weight: bold;
+    background-color: #ffffff;
+    padding: 7px;
+    border-radius: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    width: 95%;
+    height: 400px;
+    /* display: none; */
+}
+.lines-r .box .type{
+    border-bottom: #006581 double 3px;
+    padding-bottom: 5px;
+}
+.lines-r .box-1{
+    display: none;
+}
+.lines-r .box-3{
+    display: none;
+}
+.lines-r .stations{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: 100%;
+    height: 310px;
+    /* background-color: #00000033; */
+    border-radius: 0px 0px 5px 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.lines-r .stations .railway{
+    /* background-color: #000000c2; */
+    min-width: 50px;
+    max-width: 50px;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    /* gap: 5px; */
+    padding-top: 10px;
+}
+.lines-r .stations .railway hr{
+    border: none;
+    background-color: #000000c2;
+    width: 3px;
+    height: 25px;
+}
+.lines-r .stations .railway .span{
+    height: 40px;
+    /* background-color: #000000c2; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lines-r .stations .railway span{
+    width: 20px;
+    height: 20px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #ffffff; */
+    border-radius: 80px;
+    border: #008f39 solid 2px;
+    font-size: 22px;
+    margin-bottom: 1px;
+}
+.lines-r .stations .blaces{
+    /* background-color: #000000c2; */
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 25px;
+    padding-top: 10px;
+}
+.lines-r .stations .blaces h2{
+    width: 90%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-direction: row-reverse;
+    /* padding-right: 10px; */
+    /* background-color: #610909; */
+    font-size: 20px;
+    border-radius: 8px;
+        /* border: #00a2ff6f solid 2px; */
+}
+.lines-r .stations .blaces h2 span{
+    width: 40px;
+    height: 30px;
+    margin-left: 15px;
+    border-radius: 7px;
+    border: #0088ffc2 solid 2px;
 }
