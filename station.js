@@ -6,6 +6,7 @@ let choose = document.getElementById("choose")
 let popup = document.getElementById("popup")
 let lines_r = document.getElementById("lines-r")
 let types_div = document.getElementById("types")
+let box = document.querySelectorAll(".box")
 
 let types = [
     { btn: "type-box-1", box: "box-1" },
@@ -16,6 +17,10 @@ let types = [
     document.querySelectorAll(".choose").forEach((choose) => {
     choose.addEventListener("click", () => {
         popup.style.display = "flex";
+        types_div.style.display="flex"
+        box.forEach(function (boxs) {
+            boxs.style.display="none"
+        })
         setTimeout(() => {
             popup.style.opacity = "1";
         }, 1);
@@ -33,6 +38,180 @@ let types = [
         document.getElementById(item.box).style.display = "flex"
     })
 })
+
+
+
+
+
+
+
+
+// inputs
+let input_1 = document.getElementById("startStation");
+let input_2 = document.getElementById("endStation");
+
+// buttons / triggers
+let from_s = document.querySelector(".from-s");
+let to_s   = document.querySelector(".to-s");
+
+// input اللي هيتكتب فيه دلوقتي
+let activeInput = null;
+
+/* ===============================
+    فتح الـ popup وتحديد input
+================================ */
+
+from_s.addEventListener("click", () => {
+    activeInput = input_1;
+    popup.style.display = "flex";
+    setTimeout(() => {
+        popup.style.opacity = "1";
+    }, 10);
+});
+
+to_s.addEventListener("click", () => {
+    activeInput = input_2;
+    popup.style.display = "flex";
+    setTimeout(() => {
+        popup.style.opacity = "1";
+    }, 10);
+});
+
+/* ===============================
+    اختيار المحطة
+================================ */
+
+document.querySelectorAll(".blaces h2").forEach(h2 => {
+    h2.addEventListener("click", () => {
+        // النص من غير span
+        let text = h2.childNodes[0].textContent.trim();
+
+        if (activeInput) {
+            activeInput.value = text;
+        }
+
+        // قفل الـ popup
+        popup.style.opacity = "0";
+        setTimeout(() => {
+            popup.style.display = "none";
+        }, 200);
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
