@@ -358,7 +358,8 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #005969;
+        /* color: #005969; */
+        color: #007a16;
         font-size: 18px;
         font-weight: 700;
         margin-left: 6px;
