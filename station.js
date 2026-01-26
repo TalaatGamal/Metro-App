@@ -3,6 +3,7 @@
 
 
 let choose = document.getElementById("choose")
+let popup = document.getElementById("popup")
 let lines_r = document.getElementById("lines-r")
 let types_div = document.getElementById("types")
 
@@ -14,7 +15,10 @@ let types = [
 
     document.querySelectorAll(".choose").forEach((choose) => {
     choose.addEventListener("click", () => {
-        lines_r.style.display = "flex";
+        popup.style.display = "flex";
+        setTimeout(() => {
+            popup.style.opacity = "1";
+        }, 1);
         });
     });
 
@@ -42,26 +46,7 @@ let types = [
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// hand ******************************************************
 let inputs = document.querySelectorAll(".form input");
 let hand = document.querySelector(".hand")
 
@@ -72,4 +57,23 @@ inputs.forEach(input => {
 });
 choose.addEventListener("mousedown", function () {
         hand.style.display="none"
+});
+// hand ******************************************************
+
+
+
+
+
+
+
+
+
+
+let btn = document.getElementById("btn")
+let result = document.getElementById("result")
+    btn.addEventListener("click", () => {
+        result.style.display = "flex";
+        setTimeout(() => {
+            result.style.opacity = "1";
+        }, 1);
     });
