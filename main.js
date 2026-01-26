@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(() => {
         welcome.style.display="none"
         console.log("welcome page display is ( none )")
-    }, 4500);
+    }, 5000);
 })
 
 

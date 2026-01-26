@@ -55,7 +55,7 @@ body{
 .welcome .img{
     background-image: url(../App/logos/logo-1.png);
     background-position: center;
-    background-size: 80%;
+    background-size: 70%;
     background-repeat: no-repeat;
     width: 300px;
     height: 100px;
@@ -380,6 +380,32 @@ body{
     .form input:focus{
         /* border: rgb(0, 118, 139) solid 3px; */
         outline: none;
+    }
+    .app .mid-info{
+        font-size: 22px;
+        font-weight: 600;
+        width: 90vw;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        color: #000000a8;
+    }
+    .app .mid-info .img{
+        background-image: url(https://cdn-icons-gif.flaticon.com/14118/14118581.gif);
+        background-position: center;
+        background-size: 50%;
+        background-color: #ffffff;
+        background-repeat: no-repeat;
+        width: 95%;
+        height: 200px;
+        border-radius: 30px;
+    }
+    .app .mid-info span{
+        color: #007a16;
+        font-weight: 600;
     }
     .animated-line{
         width: 65%;
