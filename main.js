@@ -1,13 +1,22 @@
 let welcome = document.getElementById("welcome")
+let load_img = document.getElementById("load-img")
 
 document.addEventListener("DOMContentLoaded", function () {
     setTimeout(() => {
-        welcome.style.marginLeft="100vw"
-    }, 3000);
+        // welcome.style.marginLeft="100vw"
+        load_img.style.width="50px"
+        load_img.style.height="50px"
+    }, 1900);
+    setTimeout(() => {
+        load_img.style.opacity="1"
+    }, 2000);
+    setTimeout(() => {
+        welcome.style.opacity="0"
+    }, 3500);
     setTimeout(() => {
         welcome.style.display="none"
         console.log("welcome page display is ( none )")
-    }, 4000);
+    }, 4500);
 })
 
 
