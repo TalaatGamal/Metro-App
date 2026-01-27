@@ -217,8 +217,8 @@ body{
     .in-app{
         width: 100vw;
         padding-bottom: 5vh;
-        padding-top: 15vh;
-        /* padding-top: 25vh; */
+        /* padding-top: 15vh; */
+        padding-top: 25vh;
         display: flex;
         align-items: center;
         justify-content: start;
